@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'CreatoDisplay Black';
+    src: url('../fonts/CreatoDisplay-Black.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Black Italic';
+    src: url('../fonts/CreatoDisplay-BlackItalic.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Bold';
+    src: url('../fonts/CreatoDisplay-Bold.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Bold Italic';
+    src: url('../fonts/CreatoDisplay-BoldItalic.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Extra Bold';
+    src: url('../fonts/CreatoDisplay-ExtraBold.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Extra Bold Italic';
+    src: url('../fonts/CreatoDisplay-ExtraBoldItalic.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Light';
+    src: url('../fonts/CreatoDisplay-Light.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Light Italic';
+    src: url('../fonts/CreatoDisplay-LightItalic.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Medium';
+    src: url('../fonts/CreatoDisplay-Medium.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Medium Italic';
+    src: url('../fonts/CreatoDisplay-MediumItalic.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Regular';
+    src: url('../fonts/CreatoDisplay-Regular.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Regular Italic';
+    src: url('../fonts/CreatoDisplay-RegularItalic.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Thin';
+    src: url('../fonts/CreatoDisplay-Thin.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'CreatoDisplay Thin Italic';
+    src: url('../fonts/CreatoDisplay-ThinItalic.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}

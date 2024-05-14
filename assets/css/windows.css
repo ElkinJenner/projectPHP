@@ -1,0 +1,67 @@
+.modal_ventana_content {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+.modal_ventana {
+    margin: 2em auto;
+    width: 55%;
+    min-width: 400px;
+    max-width: 800px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+.modal_delete{
+    max-width: 500px;
+}
+.modal_delete .icon{
+    font-size: 6rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.modal_delete .message {
+    line-height: 3.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.modal_edit {
+    max-width: 600px;
+}
+.modal_ventana .mv_head{
+    padding: .5rem;
+    display: flex;
+    justify-content: right;
+}
+.modal_ventana .mv_head .close{
+    padding: .5rem;
+    font-size: 1.4rem;
+}
+.modal_ventana .mv_body{
+    display: grid;
+    padding: 1.5rem 1rem;
+}
+.modal_ventana .mv_body .heading{
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+}
+.modal_ventana .mv_body .column{
+    justify-content: space-between;
+    padding-left: 3rem;
+}
+.modal_ventana .mv_body p{
+    line-height: 0%;
+}
+.modal_ventana .mv_footer{
+    padding: 1rem;
+}
+.modal_ventana .mv_footer .botons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
