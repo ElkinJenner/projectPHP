@@ -37,9 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error al actualizar estado.";
     }
 }
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,6 +54,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <h2>Accounts <i class="ai-people-multiple"></i>
                             <p>Authorized only for administrators</p>
                          </h2>
+                         <ul class="searcher_contender">
+                            <li class="searcher_icon"><i class="ai-search sz24"></i></li>
+                            <li class="searcher"><input type="search" placeholder="search"></li>
+                        </ul>
                     </div>
                     <!--Table Title-->
                     <div class="t_head">

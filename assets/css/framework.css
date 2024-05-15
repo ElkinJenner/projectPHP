@@ -256,6 +256,36 @@ button i {
     margin: .4rem;
     font-family: var(--font_extrabold);
 }
+.searcher_contender {
+    display: flex;
+    height: 40px;
+    min-width: 350px;
+    border-radius: 0.75rem;
+    border: 2px solid var(--color_input);
+    gap: 1rem;
+}
+.searcher {
+    display: grid;
+}
+.searcher_icon {
+    display: grid;
+    align-items: center;
+    padding-left: 1rem;
+}
+.searcher input[type="search"] {
+    width: 120%;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 0px;
+    font-family: var(--font_medium);
+    font-size: 17px;
+    padding: 0px;
+}
+.searcher input:focus {
+    background-color: transparent;
+}
 footer{
     position: fixed;
     bottom: 0;
