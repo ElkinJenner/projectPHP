@@ -37,6 +37,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error al actualizar estado.";
     }
 }
+
+// Obtener los permisos del tipo de usuario
+$userPermits = get_user_permit($userId);
+
+if ($userPermits !== 'Administrador') {
+    // Si el usuario no es administrador, mostrar un mensaje y salir
+    echo "Permiso solo para administradores.";
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

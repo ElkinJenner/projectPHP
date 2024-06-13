@@ -22,7 +22,7 @@ function register_user($codUsuario, $usuario, $password, $nombres, $apellidos, $
 function get_user() {
     $conn = Db::connect();
     $UserActual = $_SESSION['email'];
-    // Database query
+    // Consulta a la base de datos
     $query = "SELECT * FROM users WHERE Email = '$UserActual'";
     $result = mysqli_query($conn, $query);
 
@@ -39,7 +39,7 @@ function get_user() {
 }
 function show_users(){
     $conn = Db::connect();
-    // Database query
+    // Consulta a la base de datos, campo Permisos del tipo ENUM
     $query = "SELECT * FROM users WHERE Permisos = 'Usuario normal'";
     $result = mysqli_query($conn, $query);
 
@@ -89,6 +89,23 @@ function get_permits() {
     $permits = $matches[1];
     
     return $permits;
+}
+
+// Obtiene los permisos de un usuario específico
+function get_user_permit($userId) {
+    $conn = Db::connect(); // Conectar a la base de datos
+    $query = "SELECT Permisos FROM users WHERE IdUsuario = ?";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("i", $userId);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        return $row['Permisos'];
+    } else {
+        return false;
+    }
 }
 
 function get_status() {
