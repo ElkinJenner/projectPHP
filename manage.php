@@ -1,4 +1,5 @@
 <?php
+
 require_once 'action/validar_session.php';
 require_once "action/functions.php";
 
@@ -38,12 +39,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// Obtener los permisos del tipo de usuario
-$userPermits = get_user_permit($userId);
+$usuarios = $_SESSION['email'];
+// Obtener los permisos del usuario
+$userPermits = get_user_permit($usuarios);
 
 if ($userPermits !== 'Administrador') {
     // Si el usuario no es administrador, mostrar un mensaje y salir
-    echo "Permiso solo para administradores.";
+    header("Location: permiso_denegado.php");
     exit();
 }
 ?>
